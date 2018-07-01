@@ -1,0 +1,326 @@
+// html elements
+html, body {
+  margin: 0;
+  height:100%;
+}
+
+footer {
+  background-color: #323232;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  color: #FFF;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Teko', sans-serif;
+}
+
+hr {
+  border-top: 1px solid #333;
+  margin-top: 0px
+}
+
+label {
+  font-weight:300;
+  text-transform: uppercase;
+}
+
+img {
+  max-width:100%;
+}
+
+.font-thin {
+  font-weight: 300;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #fff;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+  //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #C1391A;
+}
+
+// margins
+.margin-top-5 { margin-top: 5px }
+.margin-top-10 { margin-top: 10px }
+.margin-top-20 { margin-top: 20px }
+.margin-top-30 { margin-top: 30px }
+
+// cover
+#home {
+  height: 100%;
+  padding-top: 50px;
+  width: 100%;
+  background-image: url(../images/top_bkg.png);
+  background-size: cover;
+  background-position: center center;
+}
+#brand {
+  margin-top:-20px;
+}
+
+// menu
+#menu li{
+  display: inline-block;
+  padding: 20px;
+  margin-right:-4px;
+  background: linear-gradient( 0deg, #892510, #9E2D14 40%, #892510 );
+  color: #efefef;
+  text-transform: uppercase;
+}
+#menu li:hover{
+  background: #6d1d0c;
+  cursor: pointer;
+}
+// second row
+#brasil-usa {
+  position: relative;
+  background: #B93719;
+  height:600px;
+  padding-top: 120px;
+  color: white;
+}
+#brasil-usa .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FFF;
+}
+#brasil-usa-right {
+  position: absolute;
+  background-image: url(../images/box-with-usa-flag.png);
+  background-size: cover;
+  width:50%;
+  height: 600px;
+  right: 0;
+  top:0;
+}
+// third row
+#sobre-o-gfc  {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+#sobre-o-gfc h1 {
+  color: #892510;
+}
+#sobre-o-gfc h4 {
+  color: #892510;
+  text-transform: uppercase;
+}
+// fourth row
+#produtos {
+  background-color: #FB9023;
+  background-image: url(../images/produtos-bkg.png);
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+#produtos h1 {
+  color: #FFF;
+}
+#lista-produtos h1 {
+  color: #892510;
+  text-transform: uppercase;
+}
+#produtos p {
+  color: #FFF;
+}
+// fifth row
+#seja-um-franqueado {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+#seja-um-franqueado h1 {
+  color: #892510;
+  text-transform: uppercase;
+}
+// sixth row
+#depoimentos {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #d3d3d3;
+}
+#depoimentos h1,h3 {
+  color: #892510;
+  text-transform: uppercase;
+}
+
+.depoimento-wrapper {
+  background-color: white;
+  padding: 15px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border-top-right-radius: 14px;
+}
+// call to action
+#call-to-action {
+  background-color: #C1391A;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  cursor: pointer;
+}
+#call-to-action h1  {
+  color: white;
+  text-transform: uppercase;
+}
+#call-to-action p {
+  color: #FFF;
+}
+
+#formulario-franquia {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  position: relative;
+}
+// seventh row
+#materiais-publicitarios {
+  background-color: #ebebeb;
+  padding-top:75px;
+  padding-bottom:75px;
+}
+#materiais-publicitarios  h1 {
+  text-transform: uppercase;
+  color: #892510;
+}
+// eighth row
+#contato {
+  background-color: #C1391A;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  color: #FFF;
+}
+#contato h1 {
+  text-transform: uppercase;
+}
+// back-to-top
+.back-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  padding: 15px;
+  background:#892510;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+// bootstrap
+.form-control {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  color: #666;
+}
+.navbar-wrapper {
+  width:100%;
+}
+.navbar {
+  margin-bottom: 0;
+  background-color: #F37100;
+  border:0px;
+  position: fixed;
+  width:inherit;
+  z-index: 10000;
+  -webkit-border-radius:0;
+  -moz-border-radius:0;
+  border-radius:0;
+}
+.navbar-toggle {
+  background: #ddd;
+}
+.navbar-right li a{
+  color: #FFF !important;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 997px) {
+  .navbar {display: none;}
+}
+
+// pace
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #892510;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 7px;
+}
+
+.pace .pace-progress-inner {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #892510, 0 0 5px #892510;
+  opacity: 1.0;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  -moz-transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  -o-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
+}
+
+.pace .pace-activity {
+  display: block;
+  position: fixed;
+  z-index: 2000;
+  top: 15px;
+  right: 15px;
+  width: 21px;
+  height: 21px;
+  border: solid 2px transparent;
+  border-top-color: #892510;
+  border-left-color: #892510;
+  border-radius: 10px;
+  -webkit-animation: pace-spinner 400ms linear infinite;
+  -moz-animation: pace-spinner 400ms linear infinite;
+  -ms-animation: pace-spinner 400ms linear infinite;
+  -o-animation: pace-spinner 400ms linear infinite;
+  animation: pace-spinner 400ms linear infinite;
+}
+
+@-webkit-keyframes pace-spinner {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-moz-keyframes pace-spinner {
+  0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-o-keyframes pace-spinner {
+  0% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-ms-keyframes pace-spinner {
+  0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@keyframes pace-spinner {
+  0% { transform: rotate(0deg); transform: rotate(0deg); }
+  100% { transform: rotate(360deg); transform: rotate(360deg); }
+}
